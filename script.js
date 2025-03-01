@@ -7,8 +7,20 @@ document.addEventListener("DOMContentLoaded", function() {
   var form = document.getElementById("contactForm");
   if (form) {
     form.addEventListener("submit", function(event) {
-      // Remove event.preventDefault();
-      // Handle form submission (e.g., send data via AJAX or allow default form submission)
+      event.preventDefault();
+      var formData = new FormData(form);
+      // Add your AJAX request here
+      fetch('your-server-endpoint', {
+        method: 'POST',
+        body: formData
+      }).then(response => response.json())
+        .then(data => {
+          // Handle successful response
+          console.log('Success:', data);
+        }).catch(error => {
+          // Handle error
+          console.error('Error:', error);
+        });
     });
   }
 });
