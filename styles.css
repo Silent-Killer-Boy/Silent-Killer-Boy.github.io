@@ -31,21 +31,6 @@ nav ul li a {
 nav ul li a:hover {
   background: #555;
 }
-.hidden-content {
-  display: none;
-}
-footer {
-  text-align: center;
-  padding: 1em;
-  background: #333;
-  color: white;
-  position: fixed;
-  width: 100%;
-  bottom: 0;
-}
-mark {
-  background-color: yellow;
-}
 #slideshow {
   position: relative;
   max-width: 100%;
@@ -60,4 +45,13 @@ mark {
 img {
   width: 100%;
   height: auto;
+}
+footer {
+  text-align: center;
+  padding: 1em;
+  background: #333;
+  color: white;
+  position: fixed;
+  width: 100%;
+  bottom: 0;
 }
