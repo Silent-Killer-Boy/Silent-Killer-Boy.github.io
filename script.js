@@ -7,8 +7,8 @@ document.addEventListener("DOMContentLoaded", function() {
   var form = document.getElementById("contactForm");
   if (form) {
     form.addEventListener("submit", function(event) {
-      event.preventDefault();
-      alert("Contact form is disabled. Please email amitredhu670@gmail.com");
+      // Remove event.preventDefault();
+      // Handle form submission (e.g., send data via AJAX or allow default form submission)
     });
   }
 });
