@@ -43,3 +43,21 @@ footer {
   width: 100%;
   bottom: 0;
 }
+mark {
+  background-color: yellow;
+}
+#slideshow {
+  position: relative;
+  max-width: 100%;
+  height: 300px;
+  overflow: hidden;
+}
+.slide {
+  display: none;
+  width: 100%;
+  height: 100%;
+}
+img {
+  width: 100%;
+  height: auto;
+}
